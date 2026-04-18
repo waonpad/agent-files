@@ -1,9 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "env": {
-    "CLAUDE_CODE_EFFORT_LEVEL": "max",
-    "DISABLE_ZOXIDE": "1"
-  },
   "enabledPlugins": {
     "github@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
