@@ -13,7 +13,7 @@
     "editor.tabSize": 4
   },
   "[markdown]": {
-    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "files.trimTrailingWhitespace": false
   },
   "explorer.fileNesting.enabled": true
