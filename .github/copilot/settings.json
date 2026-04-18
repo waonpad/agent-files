@@ -13,5 +13,14 @@
         "repo": "obra/superpowers-marketplace"
       }
     }
+  },
+  "hooks": {
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "echo \"[$(date)] agent stopped\" >> ./tmp/agent.log",
+        "timeoutSec": 5
+      }
+    ]
   }
 }

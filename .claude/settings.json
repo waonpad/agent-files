@@ -19,5 +19,18 @@
       }
     }
   },
-  "language": "japanese"
+  "language": "japanese",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[$(date)] agent stopped\" >> ./tmp/agent.log",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
 }
