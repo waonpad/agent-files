@@ -2,7 +2,6 @@
 name: sync-hooks
 description: Sync hook definitions between Claude Code (.claude/settings.json) and GitHub Copilot (.github/copilot/settings.json) with format conversion
 argument-hint: "[--from claude | --from copilot]"
-disable-model-invocation: true
 ---
 
 # sync-hooks
