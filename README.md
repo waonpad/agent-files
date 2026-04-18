@@ -41,12 +41,16 @@
 
 ## 設計決定事項
 
-### シンボリックリンク
+### シンボリックリンクによる共通化
 
 #### .claude/rules/ と .github/instructions/
 
 ファイルタイプ別のルールを共有するため。  
 ルールファイルには [`applyTo`（GitHub Copilot）](https://docs.github.com/ja/copilot/how-tos/configure-custom-instructions/add-repository-instructions#creating-path-specific-custom-instructions)と [`paths`（Claude Code）](https://code.claude.com/docs/ja/memory#%E3%83%91%E3%82%B9%E5%9B%BA%E6%9C%89%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB)の両フィールドを併記することで、各ツールが自分の対応フィールドだけ解釈する形にしてツール間の非互換を吸収する。
+
+##### 共通化のための仕組み
+
+`.claude/skills/sync-rules/` のスキルにより、フィールドの内容を同期する。
 
 #### .claude/skills/ と .github/skills/
 

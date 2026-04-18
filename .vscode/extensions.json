@@ -1,6 +1,8 @@
 {
   "recommendations": [
-    "yzhang.markdown-all-in-one",
-    "DavidAnson.vscode-markdownlint"
+    "anthropic.claude-code",
+    "DavidAnson.vscode-markdownlint",
+    "GitHub.copilot",
+    "yzhang.markdown-all-in-one"
   ]
 }
